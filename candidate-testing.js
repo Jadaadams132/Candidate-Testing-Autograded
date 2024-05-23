@@ -5,9 +5,9 @@ const input = require('readline-sync');
 // TODO 1.1a: Define candidateName // 
 let candidateName="";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question=("Who was the first American woman in space? ");
+let question="Who was the first American woman in space? ";
 let correctAnswer= "Sally Ride";
-let candidateAnswer= 'Rose Augustine';
+let candidateAnswer= '';
 
 
 //TODO: Variables for Part 2
@@ -18,12 +18,13 @@ let candidateAnswers;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-console.log(candidateName);
+const input=require('readline-sync');
+let candidateName=input.question("What is your name?");
 }
-
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-console.log(question===candidateAnswer);
+const input=require("readline-sync");
+let candidateAnswer=input.question("Who was the first American woman in space?");
 
 }
 
