@@ -11,8 +11,8 @@ let candidateAnswer= '';
 
 
 //TODO: Variables for Part 2
-let questions;
-let correctAnswers;
+let questions = ["1. Who was the first American woman in space? ","True or False: 5 kilometer == 5000 meters? ","(5 + 3)/2 *10 = ? ",'Given the array [8, orbit, Trajectory, 45], what entry is at index 2? ', 'What is the minimum crew size for the ISS? '];
+let correctAnswers = ["Sally Ride", 'true', "40", 'Trajectory', "3" ];
 let candidateAnswers;
 
 
@@ -24,7 +24,8 @@ let candidateName=input.question("What is your name?");
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 const input=require("readline-sync");
-let candidateAnswer=input.question("Who was the first American woman in space?");
+for(let i = 0; i< 5; i++);
+let candidateAnswer=input.question();
 
 }
 
