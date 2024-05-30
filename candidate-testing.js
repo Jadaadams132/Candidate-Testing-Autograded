@@ -24,29 +24,30 @@ let candidateName = input.question("What is your name?");
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 const input = require("readline-sync");
-for(let i = 0; i < 5; i++);
-let candidateAnswer = input.question();
+let candidateAnswer = input.question(question);
 
 }
 
 function gradeQuiz(candidateAnswers) {
 } for (let i = 0; i < 5; i++); {
-console.log(i);
+  console.log(i);
+} if (candidateAnswers[i] == correctAnswers[i]) {
+  console.log()
 }
 
 
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 if (candidateAnswer === correctAnswer) {
-  
-  console.log("Your answer is correct.")
+    console.log("Your answer is correct.")
 } else {
   console.log("Your answer is incorrect.");
 }
 
  
 let grade = (candidateAnswers)/(5)*100;  //TODO 3.2 use this variable to calculate the candidates score.
-  if (grade >= 80); {
+ 
+if (grade >= 80); {
     console.log(`You passed with ${grade}`);
   } if (grade < 80) {
     console.log(`You failed with ${grade}`);
