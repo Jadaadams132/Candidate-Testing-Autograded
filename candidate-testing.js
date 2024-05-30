@@ -13,9 +13,11 @@ let candidateAnswer= '';
 //TODO: Variables for Part 2
 let questions = ["1. Who was the first American woman in space?", "2. True or False: 5 kilometer === 5000 meters", "3. (5 + 3)/2 * 10 = ? :", "4. Given the array [8, 'Orbit', 'Trajectory', 45], what is at index 2?", "5. What is the minimum crew size for the ISS?"]; 
 let correctAnswers = ["Sally Ride", 'true', "40", 'Trajectory', "3" ];
-let candidateAnswers = input.questions(questions[i]);
+let candidateAnswers = [];
 
-
+for (let i = 0; i < questions.length; i++) { 
+  console.log(questions[i]);
+}
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
 const input = require('readline-sync');
@@ -28,32 +30,55 @@ let candidateAnswer = input.question(question);
 
 }
 
-function gradeQuiz(candidateAnswers) {
-} for (let i = 0; i < 5; i++); {
-  console.log(i);
-} if (candidateAnswers[i] == correctAnswers[i]) {
-  console.log()
-}
-
-
+function gradeQuiz(candidateAnswers)  {
+  let score = [`0, 20, 40, 60, 80`];
+  if (candidateAnswers === score[0]) {
+    console.log('You have 0/5 questions correct.');
+    return score[0];
+    } else if (candidateAnswers === score[1]) {
+      console.log('You have 1/5 questions correct.');
+      return score[1];
+      } else if (candidateAnswers === score[2]) {
+        console.log('You have 2/5 questions correct.');
+        return score[2];
+        } else if (candidateAnswers === score[3]) {
+          console.log('You have 3/5 questions correct.');
+          return score[3];
+          } else if (candidateAnswers === score[4]) {
+            console.log('You have 4/5 questions correct.');
+            return score[4];
+            } else if (candidateAnswers === score[5]) {
+              console.log('You have 5/5 questions correct.');
+              return score[5]
+              
+  }; return gradeQuiz();
+    
+    
+  }
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if (candidateAnswer === correctAnswer) {
+  if (candidateAnswer === correctAnswer) {
     console.log("Your answer is correct.")
 } else {
   console.log("Your answer is incorrect.");
 }
 
  
-let grade = (candidateAnswers)/(5)*100;  //TODO 3.2 use this variable to calculate the candidates score.
+let grade = (score / 5) * 100;  //TODO 3.2 use this variable to calculate the candidates score.
  
-if (grade >= 80); {
-    console.log(`You passed with ${grade}`);
-  } if (grade < 80) {
-    console.log(`You failed with ${grade}`);
-  }
-  return grade;
-
+if (grade == 100) {
+  return 100
+} if (grade == 80) {
+  return 80    
+  } if (grade == 60) {
+  return 60
+  } if (grade == 40) {
+    return 40
+  } if (grade == 20) {
+    return 20
+    } if (grade == 0) {
+      return 0
+    }
 
 function runProgram() {
 
